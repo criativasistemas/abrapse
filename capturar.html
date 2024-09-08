@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captura de Imagens para o Teste PASI</title>
+  <style>
+    #video, #canvas {
+      width: 320px;
+      height: 240px;
+      margin: 10px auto;
+      display: block;
+    }
+    .step {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Captura de Imagens para o Teste PASI</h1>
+  
+  <!-- Etapas para diferentes partes do corpo -->
+  <div id="step1" class="step active">
+    <h2>Etapa 1: Capture a imagem do Braço Direito</h2>
+    <video id="video1" autoplay></video>
+    <button id="snap1">Capturar</button>
+    <canvas id="canvas1"></canvas>
+    <button id="next1">Próxima Etapa</button>
+  </div>
+  
+  <div id="step2" class="step">
+    <h2>Etapa 2: Capture a imagem do Braço Esquerdo</h2>
+    <video id="video2" autoplay></video>
+    <button id="snap2">Capturar</button>
+    <canvas id="canvas2"></canvas>
+    <button id="next2">Próxima Etapa</button>
+  </div>
+  
+  <div id="step3" class="step">
+    <h2>Etapa 3: Capture a imagem da Perna Direita</h2>
+    <video id="video3" autoplay></video>
+    <button id="snap3">Capturar</button>
+    <canvas id="canvas3"></canvas>
+    <button id="next3">Próxima Etapa</button>
+  </div>
+  
+  <div id="step4" class="step">
+    <h2>Etapa 4: Capture a imagem da Perna Esquerda</h2>
+    <video id="video4" autoplay></video>
+    <button id="snap4">Capturar</button>
+    <canvas id="canvas4"></canvas>
+    <button id="finish">Finalizar</button>
+  </div>
+
+  <!-- Incluir o arquivo JavaScript -->
+  <script src="cam.js"></script>
+</body>
+</html>
